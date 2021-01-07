@@ -1,13 +1,13 @@
 def validar_idade(idade):
   if idade < 18:
-    print('\nDesculpe, você não tem idade para prosseguir,', nome)
+    print('\nDesculpe, você deve ser maior de idade,', nome)
     return False
   else:
-    print('\nÓtimo! Podmeos prosseguir, ', nome)
+    print('\nÓtimo! Vamos lá, ', nome)
     return True
 
 def escolher_carta():
-  print('Digite uma das opções abaixo:')
+  print('Selecione a opção desejada:')
   print('1 - Carro\n2 - Moto\n3 - Carro e Moto')
 
   return int(input())
@@ -26,8 +26,8 @@ def calcular_preco(escolha):
 def desconto(valor):
   return valor - (valor * 0.10)
 
-nome = input('Digite o seu nome: ')
-idade = int(input('Digite sua idade: '))
+nome = input('Qual o seu nome?')
+idade = int(input('Quantos anos você tem?'))
 
 
 if validar_idade(idade):
